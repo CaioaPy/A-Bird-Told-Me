@@ -1,0 +1,6 @@
+@A_Bird_Told_Me_HostAddress = http://localhost:5007
+
+GET {{A_Bird_Told_Me_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
