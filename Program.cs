@@ -11,10 +11,10 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     {
         options.TokenValidationParameters = new TokenValidationParameters
         {
-            ValidateIssuer = true,                    
-            ValidateAudience = true,                  
-            ValidateLifetime = true,                  
-            ValidateIssuerSigningKey = true,         
+            ValidateIssuer = true,
+            ValidateAudience = true,
+            ValidateLifetime = true,
+            ValidateIssuerSigningKey = true,
             IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("YourSecretKeyHere")),  
             ValidIssuer = "your-issuer",             
             ValidAudience = "your-audience",         

@@ -35,7 +35,7 @@ public class AuthController : ControllerBase
             new Claim(ClaimTypes.Name, username),
         };
 
-        var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("i_feel_so_sigma"));
+        var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("iFeelSoSigmaAndLetterboxlongGreenoi"));
         var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
         var token = new JwtSecurityToken(
             issuer: "your_issuer",
